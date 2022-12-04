@@ -30,4 +30,20 @@ img {
 
 h2 + p {
   text-transform: uppercase;
+  margin-top: -15px;
 }
+
+#textPart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* For Desktop
+@media (min-width: 375px) {
+  #flexContainer {
+    display: flex;
+    flex-direction: row;
+  }
+} */
