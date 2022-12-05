@@ -46,6 +46,11 @@ h2 + p {
   margin-top: -15px;
 }
 
+h1 + p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 #textPart {
   display: flex;
   justify-content: center;
@@ -64,10 +69,49 @@ p {
 h1 {
   color: hsl(0, 0%, 100%);
 }
-/* For Desktop
-@media (min-width: 375px) {
+/* for desktop */
+
+@media (min-width: 600px) {
   #flexContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
   }
-} */
+  #picture {
+    content: url(./images/mobile\ pic\ purple.png);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    justify-content: flex-start;
+  }
+
+  h1,
+  h1 + p {
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  h1 + p {
+    padding-left: 0;
+  }
+
+  #stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    /* justify-content: space-around; */
+  }
+
+  #stat1,
+  #stat2,
+  #stat3 {
+    margin-right: 100px;
+  }
+
+  #textPart {
+    padding: 50px;
+  }
+}
