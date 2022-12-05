@@ -1,13 +1,12 @@
 body {
   font-family: 'Inter', sans-serif;
   font-family: 'Lexend Deca', sans-serif;
-  background-color: #0a0c1c;
+  background-color: hsl(233, 47%, 7%);
   text-align: center;
-  color: #ffffff;
 }
 
 span {
-  color: #ab5cdb;
+  color: hsl(277, 64%, 61%);
 }
 
 #flexContainer {
@@ -15,7 +14,7 @@ span {
   flex-flow: column;
   justify-content: center;
   align-content: center;
-  background-color: #1b1937;
+  background-color: hsl(244, 38%, 16%);
   border-radius: 10px;
   margin-top: 15%;
   margin-bottom: 15%;
@@ -29,9 +28,17 @@ img {
 }
 
 #picture {
-  content: url(./images/image-header-mobile.jpg);
+  content: url(./images/mobile\ pic\ purple.png);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 h2 + p {
@@ -46,6 +53,17 @@ h2 + p {
   margin: 20px;
 }
 
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
 /* For Desktop
 @media (min-width: 375px) {
   #flexContainer {
