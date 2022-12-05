@@ -28,6 +28,12 @@ img {
   border-top-right-radius: 10px;
 }
 
+#picture {
+  content: url(./images/image-header-mobile.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 h2 + p {
   text-transform: uppercase;
   margin-top: -15px;
